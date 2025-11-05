@@ -58,7 +58,7 @@
         background-color:#1e221b;
         height:auto;
         width:auto;
-        font-size:14px;
+        font-size:12px;
         color:#737570;
         border-radius:5px;
     }
@@ -81,7 +81,7 @@
     pkg install wget -y<br><br>
     wget https://raw.githubusercontent.com/thunderpublication7-official/thunderbash/refs/heads/main/script.sh<br><br>
     chmod +x script.sh<br><br> 
-    ./script.sh<br><br>
+    ./script.sh
 </p>
 <p class="headoo">After login you will see root@localhost:~# type following copy paste following commands ==></p>
 <p class="block">
@@ -90,8 +90,35 @@
     apt install wget -y<br><br>
     wget https://raw.githubusercontent.com/thunderpublication7-official/thunderbash/refs/heads/main/script2.sh<br><br>
     chmod +x script2.sh<br><br>
-    ./script2.sh<br><br>
+    ./script2.sh
 </p>
+<p class="headoo">
+    Now you will see nano editor remove all content in file and add following lines ==>
+</p>
+<p class="block">#!/bin/sh<br>
+unset SESSION_MANAGER<br>
+unset DBUS_SESSION_BUS_ADDRESS<br>
+xrdb $HOME/.Xresources<br>
+startxfce4 &</p>
+<p class="headoo">
+    After pasting lines in nano editor press 'ctrl + x' then it will ask you to save changes press 'y' to save changes then press 'enter' to exit nano editor.<br><br>After that copy and paste following lines in termimal ==> 
+</p>
+<p class="block">chmod +x ~/.vnc/xstartup<br><br>
+    vncserver :1
+</p>
+<p class="headoo">
+    Now on typing vncserver :1 vnc server is started on port 1.
+    to join server download any vnc veiwer, and click on + icon and fill details in address type 'localhost:1' and fill any name of your choice.
+</p>
+<br>
+<p class="headoo">now to stop server type this code ==></p>
+<p class="block">vncserver -kill :1</p>
+<p class="headoo">now to quit debian session from terminal type ==></p>
+<p class="block">quit</p>
+<p class="headoo">to start server again type this in terminal session to login in debian followed by command ahead==></p>
+<p class="block">pd login debian</p>
+<p class="headoo">to start server type this command in debian session in terminal ==></p>
+<p class="block">vncserver :1</p>
 
 </body>
 </html>
