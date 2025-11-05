@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
     <title>Thunder shell</title>
+    <link rel="icon" href="./logo_thundershell.png" type="image/x-icon" />
 </head>
 <body bgcolor="#322e48">
 <style>
@@ -21,21 +20,78 @@
     }
     .t{
         color:#69ff00;
-        font-size:16px;
-        padding:10px;
-        margin-left:550px;
-        vertical-align:70px;
+        font-size:20px;
         font-family:monospace;
-        display: inline-block
-
+        display: inline-block;
+        transition:color 1s;
+        
     }
+    .home{
+        color:#69ff00;
+        text-decoration:none;
+        transition:color 1s,font-size 1s;
+    
+    }    
+    
+    
+    .home:hover{
+        color:aqua;
+        font-size:larger; 
+    }
+    .code{
+        color:#69ff00;
+        text-decoration:none;
+        transition:color 1s,font-size 1s;
+    }    
+    .code:hover{
+        color:aqua;
+        font-size:larger; 
+        
+    }
+    .headoo{
+        font-family:monospace;
+        color:#69ff00;
+        font-size:15px;
+    }
+    .block{
+        font-family:monospace;
+        background-color:#1e221b;
+        height:auto;
+        width:auto;
+        font-size:14px;
+        color:#737570;
+        border-radius:5px;
+    }
+
     
 </style>   
 
 <img class ="i" src="./logo_thundershell.png">
 <h1 class="h">ThunderShell</h1>
-<table class="t" cellspacing="15">
-    <tr><th>HOME</th><th>CODES</th><th>CONTACT US</th></tr>
+<table class="t" cellspacing="54" align="right">
+    <tr><th><a href="#" class="home">HOME</a></th><th><a href="#" class="code">CODES</a></th><th><a href="#" class="code">DOWNLOAD</a></th></tr>
 </table>
+<br>
+<br>
+<hr color="green">
+<p class="headoo">How to install debian proot-distro of your choice ==></p>
+<p class="block">
+    pkg update -y<br><br>
+    pkg upgrade -y<br><br>
+    pkg install wget -y<br><br>
+    wget https://raw.githubusercontent.com/thunderpublication7-official/thunderbash/refs/heads/main/script.sh<br><br>
+    chmod +x script.sh<br><br> 
+    ./script.sh<br><br>
+</p>
+<p class="headoo">After login you will see root@localhost:~# type following copy paste following commands ==></p>
+<p class="block">
+    apt update -y<br><br>
+    apt upgrade -y<br><br>
+    apt install wget -y<br><br>
+    wget https://raw.githubusercontent.com/thunderpublication7-official/thunderbash/refs/heads/main/script2.sh<br><br>
+    chmod +x script2.sh<br><br>
+    ./script2.sh<br><br>
+</p>
+
 </body>
 </html>
