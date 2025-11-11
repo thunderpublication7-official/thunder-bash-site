@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body bgcolor="#322e48">
+<style>
+html {
+    scroll-behavior: smooth;
+}
+.block{
+        font-family:monospace;
+        background-color:#1e221b;
+        height:auto;
+        width:auto;
+        font-size:12px;
+        color:#737570;
+        border-radius:5px;
+    }
+.king{
+        font-size:35px;
+        color:#69ff00;
+        text-align:center;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .code{
+        color:#69ff00;
+        text-decoration:none;
+        transition:color 0.3s,font-size 0.3s;
+    }    
+    .code:hover{
+        color:aqua;
+        font-size:larger; 
+        
+    }
+    .headoo{
+        font-family:monospace;
+        color:#69ff00;
+        text-decoration:none;
+        font-size:15px;
+    }
+    .i{
+        height:150px;
+        width:150px;
+        border-radius:25px;
+    }
+    .h{
+        color:#69ff00;
+        font-size:50px;
+        vertical-align:70px;
+        font-family:monospace;
+        display: inline-block;
+    }
+    .t{
+        color:#69ff00;
+        font-size:20px;
+        font-family:monospace;
+        display: inline-block;
+        transition:color 1s;
+        
+    }
+    .click{
+        font-family:monospace;
+        color:rgb(102, 255, 235);
+        text-decoration:none;
+        font-size:15px;
+    }
+    
+</style>
+<img class ="i" src="./logo_thundershell.png">
+<h1 class="h">ThunderBash</h1>
+<table class="t" cellspacing="54" align="right">
+    <tr><th><a href="./codes.html" class="code">CODES</a></th><th><a href="#" class="code">DOWNLOAD</a></th><th><a href="https://github.com/thunderpublication7-official" class="code">GITHUB</a></th></tr>
+</table>
+<br>
+<br>
+<hr color="green">
+<p class="king">CODES</p>
+<p class="headoo">Click any link below to get redirected to specific codes ========></p>
+<a href="#debian" class="click">Installation of Debian via proot-distro</a></p>
+<hr color="green">    
+<p class="headoo">How to install debian proot-distro of your choice ==></p>
+<section id="debian"><p class="block">
+    pkg update -y<br><br>
+    pkg upgrade -y<br><br>
+    pkg install wget -y<br><br>
+    wget https://raw.githubusercontent.com/thunderpublication7-official/thunderbash/refs/heads/main/script.sh<br><br>
+    chmod +x script.sh<br><br> 
+    ./script.sh
+</p>
+<p class="headoo">After login you will see root@localhost:~# type following copy paste following commands ==></p>
+<p class="block">
+    apt update -y<br><br>
+    apt upgrade -y<br><br>
+    apt install wget -y<br><br>
+    wget https://raw.githubusercontent.com/thunderpublication7-official/thunderbash/refs/heads/main/script2.sh<br><br>
+    chmod +x script2.sh<br><br>
+    ./script2.sh
+</p>
+<p class="headoo">
+    Now you will see nano editor remove all content in file and add following lines ==>
+</p>
+<p class="block">#!/bin/sh<br>
+unset SESSION_MANAGER<br>
+unset DBUS_SESSION_BUS_ADDRESS<br>
+xrdb $HOME/.Xresources<br>
+startxfce4 &</p>
+<p class="headoo">
+    After pasting lines in nano editor press 'ctrl + x' then it will ask you to save changes press 'y' to save changes then press 'enter' to exit nano editor.<br><br>After that copy and paste following lines in termimal ==> 
+</p>
+<p class="block">chmod +x ~/.vnc/xstartup<br><br>
+    vncserver :1
+</p>
+<p class="headoo">
+    Now on typing vncserver :1 vnc server is started on port 1.
+    to join server download any vnc veiwer, and click on + icon and fill details in address type 'localhost:1' and fill any name of your choice.
+</p>
+<br>
+<p class="headoo">now to stop server type this code ==></p>
+<p class="block">vncserver -kill :1</p>
+<p class="headoo">now to quit debian session from terminal type ==></p>
+<p class="block">quit</p>
+<p class="headoo">to start server again type this in terminal session to login in debian followed by command ahead==></p>
+<p class="block">pd login debian</p>
+<p class="headoo">to start server type this command in debian session in terminal ==></p>
+<p class="block">vncserver :1</p>
+</section>
+
+
+</body>
+</html>
