@@ -62,6 +62,52 @@
         color:#737570;
         border-radius:5px;
     }
+    .king{
+        font-size:35px;
+        color:#69ff00;
+        display:inline-block;
+        margin-left:500px;
+        text-align:center;
+        font-family:monospace;
+    }
+    .inclass{
+        display:inline-block;
+        font-size:30px;
+        text-align:center;
+        margin-left:40px;
+        vertical-align:6px;
+        color:rgba(3, 255, 24, 0.911); /* Color of the text itself */
+        font-family:monospace;
+        animation-name:fontan;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate; /* Optional: for back-and-forth effect */
+
+    }
+
+    @keyframes fontan {
+        0%{
+            transform:rotate(0deg);
+            color:#6aff00b7
+        }
+        25%{
+            transform:rotate(-45deg);
+        }
+        50%{
+            transform:rotate(45deg);
+            color:#6aff0083
+        }
+        75%{
+            transform:rotate(-45deg);
+            color:#6aff0083;
+        }
+        100%{
+            transform:rotate(0deg);
+            color:#69ff00;
+        }
+    }  
+    
 
     
 </style>   
@@ -69,11 +115,13 @@
 <img class ="i" src="./logo_thundershell.png">
 <h1 class="h">ThunderBash</h1>
 <table class="t" cellspacing="54" align="right">
-    <tr><th><a href="#" class="code">CODES</a></th><th><a href="#" class="code">DOWNLOAD</a></th><th><a href="https://github.com/thunderpublication7-official" class="code">GITHUB</a></th></tr>
+    <tr><th><a href="./codes.html" class="code">CODES</a></th><th><a href="#" class="code">DOWNLOAD</a></th><th><a href="https://github.com/thunderpublication7-official" class="code">GITHUB</a></th></tr>
 </table>
 <br>
 <br>
 <hr color="green">
+<p class="king">FEATURED</p>
+<p class="inclass">CODES</p>
 <p class="headoo">How to install debian proot-distro of your choice ==></p>
 <p class="block">
     pkg update -y<br><br>
