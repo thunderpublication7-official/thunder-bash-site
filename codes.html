@@ -66,8 +66,7 @@ html {
         font-size:15px;
     }
     
-</style>
-<audio src="./click.mp3" id="pop"></audio>    
+</style>   
 <img class ="i" src="./logo_thundershell.png">
 <h1 class="h">ThunderBash</h1>
 <table class="t" cellspacing="54" align="right">
@@ -128,18 +127,12 @@ startxfce4 &</p>
 </section>
 <script>
     document.getElementById("code").onclick = function(){
-        document.getElementById("pop").play()
         window.alert("Your apk file will download soon please wait..")
         setTimeout(() => {
             document.getElementById("code").textContent = "Retry Download"
         },5000);
     }
-    document.getElementById("git").onclick = function(){
-        document.getElementById("pop").play()
-    }
-    document.getElementById("q").onclick = function(){
-        document.getElementById("pop").play()
-    }
+   
 </script>
 
 </body>
