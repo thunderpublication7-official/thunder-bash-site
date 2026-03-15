@@ -67,10 +67,11 @@ html {
     }
     
 </style>
+<audio src="./click.mp3" id="pop"></audio>    
 <img class ="i" src="./logo_thundershell.png">
 <h1 class="h">ThunderBash</h1>
 <table class="t" cellspacing="54" align="right">
-    <tr><th><a href="./codes.html" class="code">CODES</a></th><th><a href="https://github.com/thunderpublication7-official/thunderbash-software/releases/download/v1/thunderbash_thunderpublication7.apk" class="code">DOWNLOAD</a></th><th><a href="https://github.com/thunderpublication7-official" class="code">GITHUB</a></th></tr>
+    <tr><th><a href="./codes.html" class="code">CODES</a></th><th><a href="https://github.com/thunderpublication7-official/thunderbash-software/releases/download/v1/thunderbash_thunderpublication7.apk" class="code" id="code">DOWNLOAD</a></th><th><a href="https://github.com/thunderpublication7-official" class="code" id="git">GITHUB</a></th></tr>
 </table>
 <br>
 <br>
@@ -125,7 +126,18 @@ startxfce4 &</p>
 <p class="headoo">to start server type this command in debian session in terminal ==></p>
 <p class="block">vncserver :1</p>
 </section>
-
+<script>
+    document.getElementById("code").onclick = function(){
+        document.getElementById("pop").play()
+        window.alert("Your apk file will download soon please wait..")
+        setTimeout(() => {
+            document.getElementById("code").textContent = "Retry Download"
+        },5000);
+    }
+    document.getElementById("git").onclick = function(){
+        document.getElementById("pop").play()
+    }
+</script>
 
 </body>
 </html>
