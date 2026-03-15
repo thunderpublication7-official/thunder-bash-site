@@ -111,11 +111,11 @@
 
     
 </style>   
-
+<audio src="./click.mp3" id="pop"></audio>
 <img class ="i" src="./logo_thundershell.png">
 <h1 class="h">ThunderBash</h1>
 <table class="t" cellspacing="54" align="right">
-    <tr><th><a href="./codes.html" class="code">CODES</a></th><th><a href="https://github.com/thunderpublication7-official/thunderbash-software/releases/download/v1/thunderbash_thunderpublication7.apk" class="code" id="code">DOWNLOAD</a></th><th><a href="https://github.com/thunderpublication7-official" class="code">GITHUB</a></th></tr>
+    <tr><th><a href="./codes.html" class="code" id="q">CODES</a></th><th><a href="https://github.com/thunderpublication7-official/thunderbash-software/releases/download/v1/thunderbash_thunderpublication7.apk" class="code" id="code">DOWNLOAD</a></th><th><a href="https://github.com/thunderpublication7-official" class="code" id="git">GITHUB</a></th></tr>
 </table>
 <br>
 <br>
@@ -169,10 +169,17 @@ startxfce4 &</p>
 <p class="block">vncserver :1</p>
 <script>
     document.getElementById("code").onclick = function(){
-        window.alert("Press OK to proceed download")
+        document.getElementById("pop").play()
+        window.alert("Your apk file will download soon please wait..")
         setTimeout(() => {
             document.getElementById("code").textContent = "Retry Download"
         },5000);
+    }
+    document.getElementById("q").onclick = function(){
+        document.getElementById("pop").play()
+    }
+    document.getElementById("git").onclick = function(){
+        document.getElementById("pop").play()
     }
 </script>
 </body>
